@@ -17,3 +17,12 @@ py_binary(
         requirement("crontab")
         ],
 )
+
+py_test(
+    name = "unittests",
+    srcs = glob(["tests/**/*.py"]),
+    main = "tests/run-tests.py",
+    deps = [
+        ":lib",
+    ]
+)

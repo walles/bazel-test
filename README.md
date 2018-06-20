@@ -5,12 +5,11 @@ Developed on bazel 0.14.
 * https://github.com/bazelbuild/rules_python#experimental-bazel-python-rules
 
 ## Instructions
+* Test with `bazel test unittests`
 * Build with `bazel build bin`
 * Run with `./bazel-bin/bin`
 
 # TODO
-* Create a unit test with `py.test`, make sure bazel runs that
-* Put tests in one directory and code in the other
 * Figure out how to turn everything into a pex-like zip file
 * Figure out how to generate a `py2.py3` `.whl` file
 * Figure out how to build with both Python 2 and Python 3
@@ -23,9 +22,14 @@ Developed on bazel 0.14.
 * Make Bazel test run `px`, `px $SOMEPID`, `px --version`
 * Verify we haven't forgotten any validation we're already doing in `px`
 * Switch `px` to use bazel
-* Figure out how to get `bazel build` to build our stuff (without a trailing `bin`)
+* Create a unit test with `py.test`, make sure bazel runs that
+* Make sure test runs generate coverage data
+* Best way to get test output from `bazel test unittests`?
+* Figure out how to get `bazel build` to build our stuff (without having to do
+  `bazel build bin`)
 * Improve naming in the WORKSPACE and BUILD files
 
 ## DONE
 * Move sources into their own directory
 * Add a `requirements.txt` and make sure our code depends on that
+* Put tests in one directory and code in the other
