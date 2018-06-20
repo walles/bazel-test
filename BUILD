@@ -1,5 +1,7 @@
 package(default_visibility = ["//visibility:public"])
 
+load("@my_deps//:requirements.bzl", "requirement")
+
 py_library(
     name = "lib",
     srcs = ["src/lib.py"],
@@ -8,7 +10,12 @@ py_library(
 py_binary(
     name = "bin",
     srcs = ["src/bin.py"],
-    deps = [":lib"],
+    deps = [
+        ":lib",
+
+        # The name in quotes here must match an entry in requirements.txt
+        requirement("crontab")
+        ],
 )
 
 filegroup(

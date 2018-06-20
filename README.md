@@ -15,6 +15,8 @@ Developed on bazel 0.14.
 * Figure out how to do the non-unit-tests validation we do for `px`
 * Switch `px` to use bazel
 * Figure out how to get `bazel build` to build our stuff (without a trailing `bin`)
+* Improve naming in the WORKSPACE and BUILD files
 
 ## DONE
 * Move sources into their own directory
+* Add a `requirements.txt` and make sure our code depends on that
