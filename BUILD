@@ -17,9 +17,3 @@ py_binary(
         requirement("crontab")
         ],
 )
-
-filegroup(
-    name = "srcs",
-    # srcs = ["BUILD"] + glob(["**/*.py"]),
-    srcs = ["BUILD", "src/bin.py", "src/lib.py"]
-)
