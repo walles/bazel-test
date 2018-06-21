@@ -18,7 +18,7 @@ Developed on bazel 0.14.
 * Make Bazel verify there are no `.so` file in the generated executable zip file
 * Make Bazel test run `px`, `px $SOMEPID`, `px --version`
 * Verify we haven't forgotten any validation we're already doing in `px`
-* Switch `px` to use bazel
+* Switch [`px`](https://github.com/walles/px) to use bazel
 * Create a unit test with `py.test`, make sure bazel runs that
 * Make sure test runs generate coverage data
 * Best way to get test output from `bazel test unittests`?
