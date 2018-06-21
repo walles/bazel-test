@@ -4,13 +4,10 @@ Developed on bazel 0.14.
 * https://il.pycon.org/2016/static/sessions/benjamin-peterson.pdf
 * https://github.com/bazelbuild/rules_python#experimental-bazel-python-rules
 
-## Instructions
-* Test with `bazel test unittests`
-* Build with `bazel build bin`
-* Run with `./bazel-bin/bin`
+# Instructions
+* Test and build using `./ci.sh`
 
 # TODO
-* Figure out how to turn everything into a pex-like zip file
 * Figure out how to generate a `py2.py3` `.whl` file
 * Figure out how to build with both Python 2 and Python 3
 * Make Bazel run `shellcheck` on all shell scripts
@@ -33,3 +30,4 @@ Developed on bazel 0.14.
 * Move sources into their own directory
 * Add a `requirements.txt` and make sure our code depends on that
 * Put tests in one directory and code in the other
+* Figure out how to turn everything into a pex-like zip file
