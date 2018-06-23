@@ -3,7 +3,8 @@
 set -e
 
 # FIXME: Print test run output if tests fail
-bazel test unittests
+bazel test --python_path=/usr/local/bin/python2 unittests-py2
+bazel test --python_path=/usr/local/bin/python3 unittests-py3
 
 # FIXME: Can this thing be convinced to add a python shebang?
 bazel build --build_python_zip bin

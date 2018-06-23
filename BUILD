@@ -19,9 +19,22 @@ py_binary(
 )
 
 py_test(
-    name = "unittests",
+    name = "unittests-py2",
+
     srcs = glob(["tests/**/*.py"]),
     main = "tests/run-tests.py",
+
+    deps = [
+        ":lib",
+    ]
+)
+
+py_test(
+    name = "unittests-py3",
+
+    srcs = glob(["tests/**/*.py"]),
+    main = "tests/run-tests.py",
+
     deps = [
         ":lib",
     ]
