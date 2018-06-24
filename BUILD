@@ -18,6 +18,8 @@ py_binary(
         ],
 )
 
+# This should be identical to unittests-py3, but needs to be separate from it
+# for caching reasons. Call this one only using Python 2.
 py_test(
     name = "unittests-py2",
 
@@ -29,6 +31,8 @@ py_test(
     ]
 )
 
+# This should be identical to unittests-py2, but needs to be separate from it
+# for caching reasons. Call this one only using Python 3.
 py_test(
     name = "unittests-py3",
 

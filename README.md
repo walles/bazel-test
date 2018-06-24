@@ -8,7 +8,6 @@ Developed on bazel 0.14.
 * Test and build using `./ci.sh`
 
 # TODO
-* Best way to get test output from `bazel test unittests`?
 * Figure out how to generate a `py2.py3` `.whl` file
 * Verify `px --version` output on both Python 2 and Python 3
 * Make Bazel run `shellcheck` on all shell scripts
@@ -32,3 +31,4 @@ Developed on bazel 0.14.
 * Put tests in one directory and code in the other
 * Figure out how to turn everything into a pex-like zip file
 * Figure out how to test with both Python 2 and Python 3
+* Add flag `--test_output=errors` to get test output on errors
