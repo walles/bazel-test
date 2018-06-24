@@ -10,6 +10,7 @@ Developed on bazel 0.14.
 # TODO
 * Best way to get test output from `bazel test unittests`?
 * Figure out how to generate a `py2.py3` `.whl` file
+* Verify `px --version` output on both Python 2 and Python 3
 * Make Bazel run `shellcheck` on all shell scripts
 * Make Bazel run `flake8` on all Python code, both in Python 2 and Python 3 mode
 * Make Bazel run `mypy` on all Python code, both in Python 2 and Python 3 mode
